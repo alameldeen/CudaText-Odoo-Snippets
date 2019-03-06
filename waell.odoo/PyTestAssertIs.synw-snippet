@@ -1,0 +1,5 @@
+name=Odoo Test AssertIs
+id=otestassertis
+lex=Python
+text=
+assertIs(${1:first}, ${2:second}${4:, ${3:msg=None}})

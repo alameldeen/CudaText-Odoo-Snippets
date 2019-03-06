@@ -1,0 +1,8 @@
+name=Odoo XPATH
+id=oxp
+lex=XML
+text=
+<xpath expr="${1://field[@name='employee_id']}" position="attributes">
+    <attribute name="attrs">{'${2:attribute}': [('${3:field}', '=', ${4:condition})]}</attribute>
+</xpath>
+${20}

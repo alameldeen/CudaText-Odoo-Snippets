@@ -1,0 +1,5 @@
+name=Odoo Form Field One2Many
+id=oformfieldone2many
+lex=XML
+text=
+<field name="${1:name}" eval="${3:[(4, ref(${2:'ir.model'}))]}" />${0}

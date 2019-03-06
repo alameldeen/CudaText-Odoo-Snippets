@@ -1,0 +1,15 @@
+name=Odoo Security Group
+id=osg
+lex=XML
+text=
+<record id="${1}" model="res.groups">
+    <field name="name">${2}</field>
+    <field name="category_id" ref="${3}"/>
+    <field name="implied_ids" eval="[(4, ref(${4}))]"/>
+    <field name="users" eval="[(5, ref('${51:base.user_root}'))]"/>
+    <field name="comment">${6:Comment here.}</field>
+    <field name="color">${7:Color index number}"</field>
+    <field name="is_portal" eval="${8:True}"/>
+    <field name="share" eval="${9:True}"/>
+</record>
+${90}

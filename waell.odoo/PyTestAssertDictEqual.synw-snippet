@@ -1,0 +1,5 @@
+name=Odoo Test AssertDictEqual
+id=otestassertdictequal
+lex=Python
+text=
+assertDictEqual(${1:expected}, ${2:actual}${4:, ${3:msg=None}})

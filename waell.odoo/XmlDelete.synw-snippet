@@ -1,0 +1,5 @@
+name=Odoo Delete
+id=odelete
+lex=XML
+text=
+<delete model="${1:model.name}" search="[('id', '=', ref('${2:xml_id}'))]" />

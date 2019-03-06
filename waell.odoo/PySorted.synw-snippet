@@ -1,0 +1,6 @@
+name=Odoo Sorted
+id=osorted
+lex=Python
+text=
+${1:self}.sorted(${2:key = ${3:function|fieldname|None}}${4:, reverse=True})
+${5}

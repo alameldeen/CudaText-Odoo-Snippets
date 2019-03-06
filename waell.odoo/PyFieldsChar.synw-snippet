@@ -1,0 +1,5 @@
+name=Odoo Char Field
+id=ofchar
+lex=Python
+text=
+${1:new_field} = fields.Char(string="${2:String}", )${3}

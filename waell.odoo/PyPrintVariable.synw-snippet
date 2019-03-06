@@ -1,0 +1,5 @@
+name=Odoo Print Variable
+id=oprintvariable
+lex=Python
+text=
+print "${1:var} = " + str(${1:var})

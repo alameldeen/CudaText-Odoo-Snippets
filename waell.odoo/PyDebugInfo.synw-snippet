@@ -1,0 +1,5 @@
+name=Odoo Debug Info
+id=odebuginfo
+lex=Python
+text=
+_logger.info("${1:Message}")

@@ -1,0 +1,5 @@
+name=Odoo Field Option Currency
+id=ofieldoptioncurrency
+lex=XML
+text=
+t-field-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: &quot;res_company.currency_id&quot;}"

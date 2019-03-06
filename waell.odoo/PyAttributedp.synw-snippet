@@ -1,0 +1,5 @@
+name=Odoo Attribute dp
+id=oattributedp
+lex=Python
+text=
+digits=dp.get_precision("${1:name}") ${20}

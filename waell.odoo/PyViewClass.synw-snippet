@@ -1,0 +1,54 @@
+name=Odoo View Class
+id=oviewclass
+lex=Python
+text=
+# -*- coding: utf-8 -*-
+##############################################################################
+#
+#    Odoo, Open Source Management Solution
+#    Copyright (c) ${01:2019} ${02:Waell Ahmed} (${03:http://www.genericdev.com}) info <${04:waell.alameldeen@gmail.com}>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+
+from odoo import api, fields, models, _
+from odoo import tools
+${1}
+
+########## ########## ########## ########## ##########
+# ${2:Description}
+########## ########## ########## ########## ##########
+class ${3:Class}(models.Model):
+    _name = "${4:ObjectName}"
+    _auto = False
+    _description = "${5:Class Description}"
+    ${6:_rec_name & _order & _table}
+
+    name = fields.Char(string="${7}")${8}
+    ${9:field} = fields.Char(string='${10:Column}', readonly=True)
+    ${10:m2ofield} = fields.Many2one('${11:related.class.name}', string='${12:M2O}', readonly=True)
+
+    def init(self, cr):
+        tools.drop_view_if_exists(cr, "${13:TableName}")
+        cr.execute("""
+            CREATE OR REPLACE VIEW ${13:TableName} AS (
+            SELECT 
+                row_number() over(order by name) AS id,
+                name,
+             ${9:field},
+             ${10:m2ofield}
+            FROM 
+            WHERE 
+        )""")

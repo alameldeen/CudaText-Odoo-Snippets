@@ -1,0 +1,5 @@
+name=Odoo Test AssertDictContainsSubset
+id=otestassertdictcontainssubset
+lex=Python
+text=
+assertDictContainsSubset(${1:expected}, ${2:actual}${4:, ${3:msg=None}})

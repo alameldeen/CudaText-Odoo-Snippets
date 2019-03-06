@@ -1,0 +1,5 @@
+name=Odoo Attrs Required
+id=oattrsrequired
+lex=XML
+text=
+ attrs="{'required':[(${1:field},'=', ${2:condition})]}" ${10}

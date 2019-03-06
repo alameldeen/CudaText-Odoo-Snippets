@@ -1,0 +1,5 @@
+name=Odoo Test AssertRaisesExtended
+id=otestassertraisesextended
+lex=Python
+text=
+assertRaises(${1:exception}, ${2:callable}, ${3:*args}, ${4:**kwds})

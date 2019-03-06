@@ -1,0 +1,20 @@
+name=Odoo Copy Method
+id=ocopymethod
+lex=Python
+text=
+@api.multi
+def copy(self, default=None):
+    """
+        Create a new record in ${1:ModelName} model from existing one
+        @param default: dict which contains the values to be override during
+        copy of object
+
+        @return: returns a id of newly created record
+    """
+    for rec in self:
+        default = dict(default or {})
+        default.update(
+           ${1:name} = _('%s (copy)') % (self.${1:name} or ''),
+           ${2:code} = _('%s (copy)') % (self.${2:code} or ''),
+        )
+        return super(${3:ClassName}, self).copy(default)

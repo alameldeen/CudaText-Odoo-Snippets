@@ -1,0 +1,9 @@
+name=Odoo Form Footer
+id=oformfooter
+lex=XML
+text=
+<footer>
+    <button name="${1:Function}" string="${2:String}" type="object" class="oe_highlight"/>
+    or
+    <button string="Cancel" class="oe_link" special="cancel" />
+</footer>${20}

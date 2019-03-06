@@ -1,0 +1,13 @@
+name=Odoo Read Group
+id=oreadgroup
+lex=Python
+text=
+${1:self}.read_group(
+    ${10:domain = ${11:oogendomain},}
+    ${20:fields = [${21:fields}]),}
+    ${30:groupby = ['${31:field$}${32:\:${33:day|week|month|quarter|year}}'$39]),}
+    ${40:offset = ${41:int},}
+    ${50:orderby = ['${51:fields}'$52]),${53:  # supported only for many2one fields currently}}
+    ${60:offset = ${61:False}}
+)
+${4}

@@ -1,0 +1,15 @@
+name=Odoo NameSearch Method
+id=onamesearchmethod
+lex=Python
+text=
+@api.model
+@api.depends("${1:name}", "${2:code}")
+def name_search(self, name, args=None, operator='ilike', limit=100):
+    args = args or []
+    domain = []
+    if name:
+        domain = ["|", ("${2:code}", "=", name), ("${1:name}", operator, name)]
+        if operator in expression.NEGATIVE_TERM_OPERATORS:
+            domain = ["&"] + domain
+    ${3:item} = self.search(expression.AND([domain, args]), limit=limit)
+    return ${3:item}.name_get()

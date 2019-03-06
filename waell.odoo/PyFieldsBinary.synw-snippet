@@ -1,0 +1,5 @@
+name=Odoo Binary Field
+id=ofbinary
+lex=Python
+text=
+${1:new_field} = fields.Binary(string="${2:String}", )${3}

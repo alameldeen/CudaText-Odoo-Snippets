@@ -1,0 +1,5 @@
+name=Odoo RelativeDelta
+id=orelativedelta
+lex=Python
+text=
+(DateTime.now() - relativedelta(${1:months=2})).strftime('${2:%Y-%m-%d}${3: }${4:%H:%M:%S}')${0}

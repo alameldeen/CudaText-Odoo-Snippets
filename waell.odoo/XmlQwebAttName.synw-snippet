@@ -1,0 +1,5 @@
+name=Odoo Qweb Attribute Name
+id=oqwebattname
+lex=XML
+text=
+t-att-${1:name}="${2:value}"

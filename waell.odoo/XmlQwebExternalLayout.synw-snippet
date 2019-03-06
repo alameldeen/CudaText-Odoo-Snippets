@@ -1,0 +1,7 @@
+name=Odoo Qweb External Layout
+id=oqwebexternallayout
+lex=XML
+text=
+<t t-call="report.external_layout">
+    ${0}
+</t>

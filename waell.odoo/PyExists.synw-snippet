@@ -1,0 +1,6 @@
+name=Odoo Exists
+id=oexists
+lex=Python
+text=
+${1:self}.exists()
+${2}

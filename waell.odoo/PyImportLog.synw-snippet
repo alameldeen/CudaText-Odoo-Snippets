@@ -1,0 +1,8 @@
+name=Odoo Import Log
+id=oimportlog
+lex=Python
+text=
+import logging
+_logger = logging.getLogger(__name__)
+${1:_logger.debug(${11})}
+${2:}

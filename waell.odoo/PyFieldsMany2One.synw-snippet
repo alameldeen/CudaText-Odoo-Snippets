@@ -1,0 +1,5 @@
+name=Odoo Many2One Field
+id=ofm2o
+lex=Python
+text=
+${1:new_field}_id = fields.Many2one(comodel_name="${2:comodel_name}", string="${3:String}", domain="[]", context="{}")${10}

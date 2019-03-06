@@ -1,0 +1,7 @@
+name=Odoo Qweb External Layout Footer
+id=oqwebexternallayoutfooter
+lex=XML
+text=
+<t t-call="report.external_layout_footer">
+    ${0}
+</t>

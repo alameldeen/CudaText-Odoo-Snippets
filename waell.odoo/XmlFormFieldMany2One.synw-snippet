@@ -1,0 +1,5 @@
+name=Odoo Form Field Many2One
+id=oformfieldmany2one
+lex=XML
+text=
+<field name="${1:name}" ref="${2:ir.model}" />${0}

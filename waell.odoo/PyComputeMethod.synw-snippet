@@ -1,0 +1,11 @@
+name=Odoo Compute Method
+id=ocomputemethod
+lex=Python
+text=
+@api.multi
+@api.depends("${1:Fields}")
+@api.onchange("${1:Fields}")
+def _compute_${2:Field}(self):
+    for rec in self:
+        if rec.${3:Field}:
+            ${4}

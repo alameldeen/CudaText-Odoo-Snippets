@@ -1,0 +1,6 @@
+name=Odoo Filters
+id=ofilters
+lex=Python
+text=
+${1:self}.filtered(${10:function or a dot-separated sequence of field names})
+${2}

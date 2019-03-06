@@ -1,0 +1,5 @@
+name=Odoo Import DateFormat
+id=oimportdateformat
+lex=Python
+text=
+from odoo.tools import DEFAULT_SERVER_DATE_FORMAT

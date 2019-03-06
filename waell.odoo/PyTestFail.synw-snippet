@@ -1,0 +1,5 @@
+name=Odoo Test Fail
+id=otestfail
+lex=Python
+text=
+fail(${1:msg=None})

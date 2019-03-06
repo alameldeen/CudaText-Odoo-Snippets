@@ -1,0 +1,5 @@
+name=Odoo Test AssertFalse
+id=otestassertfalse
+lex=Python
+text=
+assertFalse(${1:expr}${3:, ${2:msg=None}})

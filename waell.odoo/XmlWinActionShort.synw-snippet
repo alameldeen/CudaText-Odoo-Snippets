@@ -1,0 +1,21 @@
+name=Odoo Window Action Short
+id=owinactionshort
+lex=XML
+text=
+<act_window
+    name="${10:Action Name}"
+    id="${20:${21:model}_action${22:_detail}}"
+    res_model="${30:res.model}"
+    ${31:src_model="${32:src.model}"}
+    ${60:view_type="${61:form}"}
+    ${62:view_mode="${63:tree,form,calendar,graph}"}
+    ${64:view_id="${65:view_crm_lead2opportunity_partner_mass}"}
+    ${70:domain="${71:oogendomain}"}
+    ${80:context="${81:oogencontext}"}
+    ${90:groups="${91:module.group_id}"}
+    ${40:target="new"}
+    ${50:multi="True"}
+    ${51:key2="client_action_multi"}
+    ${60:web_icon="${61:module},${62:static/description/icon.png}"
+/>
+${90}

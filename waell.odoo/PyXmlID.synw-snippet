@@ -1,0 +1,5 @@
+name=Odoo XML ID
+id=oxmlid
+lex=Python
+text=
+${1:example}_id = self.env.ref("${2:module.object_id}").id${20}

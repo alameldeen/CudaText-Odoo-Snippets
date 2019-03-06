@@ -1,0 +1,20 @@
+name=Odoo Context
+id=ocontext
+lex=Python
+text=
+{
+    ${10:'${11:state}': '${12:posted}',}
+    ${20:'measures': ['__${21:count}'],}
+    ${30:'search_default_${31:current}': 1,}
+    ${40:'search_default_${41:partner_id}': [${42:active_id}],}
+    ${50:'search_default_${51:category_id}': ref('${52:base.module_category_localization}'),}
+    ${60:'default_${61:partner_id}': ${62:active_id},}
+    ${70:'default_${71:invoice_ids}': [(4, ${72:active_id}, None)],}
+    ${80:'default_${81:name}': ${82:${83:name} + '${84:\:}'},}
+    ${90:'default_${91:partner_to}': '${92:\${(object.${93:id} or \\'\\')|safe\\}}',}
+    ${100:'default_active_domain': [['${101:id}', '${102:in}', context.get('active_ids', [])]],}
+    ${110:'group_by': [${111:'date_closed:month'}],}
+    ${120:'col_group_by': [${121:'create_date:month'}],}
+    ${130:'group_by_no_leaf': 1,
+}
+${}

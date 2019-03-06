@@ -1,0 +1,57 @@
+name=Odoo Manifest
+id=manifest
+lex=Python
+text=
+# -*- coding: utf-8 -*-
+##############################################################################
+#
+#    Odoo, Open Source Management Solution
+#    Copyright (c) ${01:2019} ${02:Waell Ahmed} (${03:http://www.genericdev.com}) info <${04:waell.alameldeen@gmail.com}>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+{
+    'name' : "${1:ModuleName}",
+    'version' : '0.1',
+    'summary': "${1:ModuleName}",
+    'sequence': 50,
+    'description': "${1:ModuleName}",
+    # Technical Settings, Localization, Account Charts, Sales, Lead Automation, Project, Inventory, Manufacturing, Invoicing and Payments, Accounting and Finance, Purchases, User types, 
+    # Employees, Leaves, Contracts, Recruitment, Expenses, Timesheets, Attendance, Appraisals, Payroll, Gamification, Events, Email Marketing, Survey, Point of Sale, Specific Industry Applications,
+    # Website, Document Signatures, After-Sales, Theme, Administration, Extra Rights, Other Extra Rights and Uncategorized
+    'category': "${2:Testing}",
+    'author' : "${20:Waell Ahmed}",
+    'website': "${3:www.genericdev.com}",
+    'external_dependencies': {
+        'python': [],
+    },
+    'depends' : ["${5:base}"],
+    'data': [
+        # 'security/_security.xml',
+        # 'security/ir.model.access.csv',
+	${6}
+    ],
+    'demo': [],
+    'images' : [],
+    'js': [],
+    'css': [],
+    'qweb': [${8}],
+    'test': [${9}],
+    'license': 'AGPL-3',
+    'installable': True,
+    'application': False,
+    'auto_install': False,
+}
+${20}

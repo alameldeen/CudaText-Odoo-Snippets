@@ -1,0 +1,7 @@
+name=Odoo Qweb Layout Style
+id=oqweblayoutstyle
+lex=XML
+text=
+<t t-call="report.style">
+    ${0}
+</t>

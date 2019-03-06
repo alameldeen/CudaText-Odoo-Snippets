@@ -1,0 +1,5 @@
+name=Odoo Form Monetary
+id=oformmonetary
+lex=XML
+text=
+widget="monetary" options="{'currency_field': ${1:currency_id}}" ${20}

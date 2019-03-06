@@ -1,0 +1,11 @@
+name=Odoo View Action
+id=oviewaction
+lex=XML
+text=
+<record id="${1:Class}_action_view_${2:form/tree/search/calendar/graph/pivot/kanban}" model="ir.actions.act_window.view">
+    <field name="act_window_id" ref="action_${1:Class}_views"/>
+    <field name="view_mode">${3:tree/kanban/form/calendar/pivot/graph}</field>
+    <field name="view_id" ref="${4:ModuleName.}view_${1:Class}_${3:tree/kanban/form/calendar/pivot/graph}"/>
+    <field name="sequence" eval="${5:0}"/>
+</record>
+${90}

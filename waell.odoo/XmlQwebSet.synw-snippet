@@ -1,0 +1,7 @@
+name=Odoo Qweb Set
+id=oqwebset
+lex=XML
+text=
+<t t-set="${1:name}">
+    ${0}
+</t>

@@ -1,0 +1,5 @@
+name=Odoo Attrs Readonly
+id=oattrsreadonly
+lex=XML
+text=
+ attrs="{'readonly':[(${1:field},'=', ${2:condition})]}" ${10}

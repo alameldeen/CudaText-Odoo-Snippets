@@ -1,0 +1,5 @@
+name=Odoo Attribute Related
+id=oattributerelated
+lex=Python
+text=
+related="${1:model}.${2:field}" ${3}

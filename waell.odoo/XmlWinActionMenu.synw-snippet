@@ -1,0 +1,22 @@
+name=Odoo Window Action
+id=owinaction
+lex=XML
+text=
+<record id="action_${1:Class}_views" model="ir.actions.act_window">
+    <field name="name">${2:String}</field>
+    <field name="res_model">${3:Class}</field>
+    <field name="view_mode">tree,form</field>
+    <field name="search_view_id" ref="${4}"/>
+    <field name="context">{${5}}</field>
+    <field name="domain">[${6}]</field>
+    <field name="groups_id" eval="[(4, ref(${5:base.group_user}))]"/>
+    <field name="target">${21:new|inline|current}</field>
+    <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+            Click to Add an ${7}
+        </p>
+    </field>
+</record>
+
+<menuitem action="action_${1:Class}_views" id="${1:Class}_menu" parent="${8:main}" sequence="${9:10}"  ${90:web_icon="${91:module},${92:static/description/icon.png}"/>
+${20}

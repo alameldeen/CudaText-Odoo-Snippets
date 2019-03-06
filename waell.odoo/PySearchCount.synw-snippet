@@ -1,0 +1,5 @@
+name=Odoo Search Count
+id=osearchcount
+lex=Python
+text=
+${1:self}.search_count([("${11:field}", "${12:=}", ${13})${14}])${90}

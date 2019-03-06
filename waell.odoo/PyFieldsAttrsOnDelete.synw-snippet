@@ -1,0 +1,5 @@
+name=Odoo Field Attribute OnDelete
+id=ofattrsondelete
+lex=Python
+text=
+ondelete="${1:set null/restrict/cascade}" ${20}

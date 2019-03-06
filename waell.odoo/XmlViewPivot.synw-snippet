@@ -1,0 +1,16 @@
+name=Odoo Pivot View
+id=opivotv
+lex=XML
+text=
+<record id="view_${1:Class}_pivot" model="ir.ui.view">
+    <field name="name">view.${2:Class}.pivot</field>
+    <field name="model">${2:Class}</field>
+    <field name="arch" type="xml">
+        <pivot string="${3:Description}" disable_linking="True">
+            <field name="${4:Many2One}" type="${5:row}" />
+            <field name="${6:DateField}" interval="month" type="${7:/row/col/g}" />
+            <field name="${8:NumericField}" type="measure" />
+        </pivot>
+    </field>
+</record>
+${20}

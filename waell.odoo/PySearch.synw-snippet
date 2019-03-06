@@ -1,0 +1,10 @@
+name=Odoo Search
+id=osearch
+lex=Python
+text=
+${1:self}.search([("${11:field}", "${12:=}", ${13})$14],
+    ${20:offset = ${21:int},}
+    ${30:limit = ${31:int},}
+    ${40:order = '${41:field$}',}
+    ${50:count = True}
+)${90}

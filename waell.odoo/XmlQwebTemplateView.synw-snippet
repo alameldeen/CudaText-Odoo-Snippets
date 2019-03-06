@@ -1,0 +1,67 @@
+name=Odoo Qweb Template View
+id=oqwebtemplateview
+lex=XML
+text=
+<!--TEMPLATE: ${1:title_or_description}-->
+<template id="report_${2:name}_document">
+    <t t-call="report.external_layout">
+        <t t-set="o" t-value="doc" />
+            <div class="page">
+                <!--div class="oe_structure" /-->
+                <div class="row">
+                    <div class="col-xs-5 col-xs-offset-7">
+                </div>
+            </div>
+            <h2>
+                <span t-field="o.name" />
+            </h2>
+            <div class="row mt32 mb32">
+                <div class="col-xs-2" t-if="o.name">
+                    <strong></strong>
+                    <p t-field="o.name" />
+                </div>
+                <div class="col-xs-2" t-if="o.${3:field}">
+                    <strong></strong>
+                    <p t-field="o.${4:field}" />
+                </div>
+            </div>
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="text-right"></th>
+                    </tr>
+                </thead>
+                <tbody class="${5:module_name}_tbody">
+                    <t t-foreach="o.${6:o2m}" t-as="d">
+                        <tr t-if="d.name">
+                            <td>
+                                <span t-field="d." />
+                            </td>
+                            <td class="text-right">
+                                <span t-field="d." />
+                            </td>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+            <!--div class="oe_structure" /-->
+            <div class="footer"></div>
+        </div>
+    </t>
+</template>
+<template id="report_${2:name}">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="doc">
+            <t t-call="${3:module_name}.report_${2:name}_document" />
+        </t>
+    </t>
+</template>
+<report
+    id="report_${2:name}_print"
+    string="${1:title_or_description}"
+    model="${3:module_name}"
+    report_type="qweb-pdf"
+    file="${3:module_name}.report_${2:name}"
+    name="${3:module_name}.report_${2:name}"
+/>${20}

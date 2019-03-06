@@ -1,0 +1,8 @@
+name=Odoo Nested Groups
+id=onestedgroups
+lex=XML
+text=
+<group string="${1}" name="${2}">
+    <group name="${3}" sring="${4}">${5}</group>
+    <group name="${6}" sring="${7}">${8}</group>
+</group>${10}

@@ -1,0 +1,8 @@
+name=Odoo Form Header
+id=oformheader
+lex=XML
+text=
+<header>
+    <button string="${10:Title}" type="${11:(workflow)|object|action}" name="${12:(signal)|method|actionid}" states="${13:state}"${14: class="oe_highlight"}/>
+    <field name="${20:fieldname}" widget="statusbar" statusbar_visible="${22}" statusbar_colors="{'KEY_IS_STATE':'VALUE_IS_COLOR'}"/>
+</header>

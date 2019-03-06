@@ -1,0 +1,7 @@
+name=Odoo Qweb HTML Contrainer
+id=oqwebhtmlcontainer
+lex=XML
+text=
+<t t-call="report.html_container">
+    ${0}
+</t>

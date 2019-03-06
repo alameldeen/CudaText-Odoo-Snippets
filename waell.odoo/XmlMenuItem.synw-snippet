@@ -1,0 +1,5 @@
+name=Odoo MenuItem
+id=omenuitem
+lex=XML
+text=
+<menuitem id="${1}_menu" name="${2}" parent="${3}" action="${4}" sequence="${5}" groups="${6}" ${60:web_icon="${61:module},${62:static/description/icon.png}"/>

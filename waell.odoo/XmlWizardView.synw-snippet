@@ -1,0 +1,59 @@
+name=Odoo Wizard View
+id=owizardview
+lex=XML
+text=
+<!--WIZARD: ${1:Description}-->
+<record id="view_${2:Class}_form" model="ir.ui.view">
+    <field name="name">${3:Class}.wizard</field>
+    <field name="model">${3:Class}</field>
+    <field name="arch" type="xml">
+        <form string="${1:Description}">
+            <!--separator string="${4:Title}" colspan="4" /-->
+            <!--or-->
+            <!--label string="${4:Title}" /-->
+            <!--or-->
+            <!--p class="oe_grey">
+                ${4:Title}
+            </p-->
+            <group>
+                <group>
+                    <field name="${5:field_name}" class="oe_inline" />
+                </group>
+                <group>
+                    <!--field name="${6:many2one}_id" options="{'no_open': True, 'no_create': True}" /-->
+                </group>
+            </group>
+        <footer>
+            <div class="oe_right">
+                <button name="${7:action_button}" string="${8:action}" type="object" class="btn-primary" />
+                <button special="cancel" string="Cancel" class="btn-default" />
+            </div>
+        </footer>
+        </form>
+    </field>
+</record>
+
+<record id="action_${2:Class}_form" model="ir.actions.act_window">
+    <field name="name">${1:Description}</field>
+    <field name="res_model">${3:Class}</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+    <field name="view_id" ref="view_${2:Class}_form"/>
+</record>
+
+<!--act_window
+    id="action_${2:Class}_form"
+    name="${1:Description}"
+    res_model="${3:Class}"
+    src_model="${8:src_class}"
+    view_mode="form"
+    target="new"
+    key2="client_action_multi" /-->
+
+<menuitem 
+    action="action_${2:Class}_form"
+    id="${2:Class}_menu"
+    parent="${9:main}"
+    sequence="${10:10}"
+/>

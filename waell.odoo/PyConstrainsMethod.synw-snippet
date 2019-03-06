@@ -1,0 +1,11 @@
+name=Odoo Constrains Method
+id=oconstrainsmethod
+lex=Python
+text=
+@api.multi
+@api.constrains("${1:Fields}")
+def _check_${2:Field}(self):
+    for rec in self:
+        if rec.${3:Field}:
+            raise UserError(_("${4:Message"}))
+       ${5}

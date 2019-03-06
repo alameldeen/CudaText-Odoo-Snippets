@@ -1,0 +1,5 @@
+name=Odoo Form Separator
+id=oformseparator
+lex=XML
+text=
+<separator${21: colspan="${22:2}"} string="${24:Section Title}"/>

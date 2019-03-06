@@ -1,0 +1,7 @@
+name=Odoo Qweb T-Name
+id=oqwetname
+lex=XML
+text=
+<t t-name="${1:template-name}">
+    ${0:<!-- template code -->}
+</t>

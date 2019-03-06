@@ -1,0 +1,12 @@
+name=Odoo NameGet Method
+id=onamegetmethod
+lex=Python
+text=
+@api.multi
+@api.depends("${1:name}", "${2:code}")
+def name_get(self):
+    result = []
+    for rec in self:
+        name = '%s [%s]' % (rec.${1:name}, rec.${2:code})
+        result.append((rec.id, name))
+    return result

@@ -1,0 +1,8 @@
+name=Odoo Form Filter Today
+id=oformfiltertoday
+lex=XML
+text=
+<filter name="${1:today}" string="${2:Today}" domain="[
+    (${3:date},'>=', datetime.datetime.combine(context_today(), datetime.time(0,0,0))),
+    (${3:date},'<=', datetime.datetime.combine(context_today(), datetime.time(23,59,59)))]"
+/>

@@ -1,0 +1,5 @@
+name=Odoo Form Field Date
+id=oformfielddate
+lex=XML
+text=
+<field name="${1:name}" eval="${3:time.strftime(${2:'%Y-%m-%d'})}" />${0}

@@ -1,0 +1,14 @@
+name=Odoo Inherit View
+id=oinheritv
+lex=XML
+text=
+<record id="view_${1:Class}_${2:form/tree/search}_inherit" model="ir.ui.view">
+    <field name="name">view.${3:Class}.${4:form/tree/search}.inherit</field>
+    <field name="model">${3:Class}</field>
+    <field name="inherit_id" ref="${5:Model.ViewID}"/>
+    <field name="arch" type="xml">
+        <field name="${5:FieldName}" position="${6:after/before/attributes}">
+            ${7}
+        </field>
+    </field>
+</record>${10}

@@ -1,0 +1,7 @@
+name=Odoo Qweb Internal Layout
+id=oqwebinternallayout
+lex=XML
+text=
+<t t-call="report.internal_layout">
+    ${0}
+</t>

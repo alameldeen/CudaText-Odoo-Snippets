@@ -1,0 +1,14 @@
+name=Odoo Form Div
+id=oformdiv
+lex=XML
+text=
+<div class="oe_title">
+    <label for="${1:FieldName}" class="oe_edit_only" />
+    <h1>
+        <field name="${1:FieldName}" class="oe_inline" />
+    </h1>
+    <label for="${2:FieldName}" class="oe_edit_only" />
+    <h2>
+        <field name="${2:FieldName}" />
+    </h2>
+</div>

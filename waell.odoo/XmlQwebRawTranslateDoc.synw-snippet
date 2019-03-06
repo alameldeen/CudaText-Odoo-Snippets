@@ -1,0 +1,5 @@
+name=Odoo Qweb Raw Translate Doc
+id=oqwebrawtranslatedoc
+lex=XML
+text=
+<t t-raw="translate_doc(${1:doc_id}, ${2:doc_model}, '${3:lang}', ${4:module.template'})" />

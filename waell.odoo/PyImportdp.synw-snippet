@@ -1,0 +1,5 @@
+name=Odoo Import DecimalPrecision
+id=oimpordp
+lex=Python
+text=
+from odoo.addons.decimal_precision import decimal_precision as dp

@@ -1,0 +1,10 @@
+name=Odoo Asset Template
+id=ot
+lex=XML
+text=
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    ${0}
+
+</templates>

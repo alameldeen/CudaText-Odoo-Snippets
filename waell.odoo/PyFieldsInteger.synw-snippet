@@ -1,0 +1,5 @@
+name=Odoo Integer Field
+id=ofint
+lex=Python
+text=
+${1:new_field} = fields.Integer(string="${2:String}", )${3}

@@ -1,0 +1,16 @@
+name=Odoo Sequence Record
+id=osequencerecord
+lex=XML
+text=
+<record id="sequence_${10:seq_name}" model="ir.sequence">
+    <field name="name">${11:Sequence Name}</field>
+    <field name="code">${12:module.code}</field>
+    <field name="prefix">${20}</field>
+    <field name="suffix">${31}</field>
+    <field name="padding">${41:5}</field>
+    <field name="number_next">${51:1}</field>
+    <field name="number_increment">${61:1}</field>
+    <field name="company_id" eval="${71:False}"/>
+    <field name="use_date_range" eval="${81:True}"/>
+</record>
+${90}

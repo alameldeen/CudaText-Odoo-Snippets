@@ -1,0 +1,5 @@
+name=Odoo IR Ref Attribute
+id=oirrefatt
+lex=XML
+text=
+ref('${1:record.external.id}')${0}

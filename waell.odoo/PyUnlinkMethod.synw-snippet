@@ -1,0 +1,10 @@
+name=Odoo Unlink Method
+id=ounlinkmethod
+lex=Python
+text=
+def unlink(self):
+    ${1}
+    res = super(${2:Class}, self).unlink()
+    ${2}
+    return res
+${20}

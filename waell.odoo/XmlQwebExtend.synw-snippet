@@ -1,0 +1,9 @@
+name=Odoo Qweb Extend
+id=oqwebextend
+lex=XML
+text=
+<t t-extend="${1:base.template}">
+    <t t-jquery="${2:ul}" t-operation="${3:append/prepend/before/after/inner/replace}">
+        ${4:code}
+    </t>${0}
+</t>

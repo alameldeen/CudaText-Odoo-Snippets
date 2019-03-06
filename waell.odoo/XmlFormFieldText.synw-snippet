@@ -1,0 +1,9 @@
+name=Odoo Form Field Text
+id=oformfieldText
+lex=XML
+text=
+<field name="${1:name}">
+    <![CDATA[
+        ${2:content}
+    ]]${-1}>
+</field>${0}

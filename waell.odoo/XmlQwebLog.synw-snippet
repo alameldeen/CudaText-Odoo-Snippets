@@ -1,0 +1,5 @@
+name=Odoo Qweb Log
+id=oqweblog
+lex=XML
+text=
+<t t-log="${1:value}"/>${0}

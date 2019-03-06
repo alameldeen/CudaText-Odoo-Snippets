@@ -1,0 +1,5 @@
+name=Odoo Test AssertNotIsInstance
+id=otestassertnotisinstance
+lex=Python
+text=
+assertNotIsInstance(${1:obj}, ${2:cls}${4:, ${3:msg=None}})

@@ -1,0 +1,10 @@
+name=Odoo Form Title
+id=oformtitle
+lex=XML
+text=
+<div class="oe_title">
+    <h1>
+        <label for="${1:field}" string="${2:label}"/>
+        <field name="${1:field}" class="oe_inline"/>
+    </h1>
+</div>${10}

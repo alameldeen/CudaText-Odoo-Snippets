@@ -1,0 +1,5 @@
+name=Odoo Field Attribute Track Visibility
+id=ofattrstrackvisibility
+lex=Python
+text=
+track_visibility='${1:onchange}'${0}

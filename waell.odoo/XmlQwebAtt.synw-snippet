@@ -1,0 +1,5 @@
+name=Odoo Qweb Attribute
+id=oqwebatt
+lex=XML
+text=
+t-att="${1:dict_of_pair}"

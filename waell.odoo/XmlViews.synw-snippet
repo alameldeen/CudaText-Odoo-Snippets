@@ -1,0 +1,74 @@
+name=Odoo Views
+id=oviews
+lex=XML
+text=
+<record id="view_${1:Class}_form" model="ir.ui.view">
+    <field name="name">view.${2:Class}.form</field>
+    <field name="model">${2:Class}</field>
+    <field name="arch" type="xml">
+        <form string="${3:String}">
+            <header>
+                <button string="${10:Title}" type="${11:(workflow)|object|action}" name="${12:(signal)|method|actionid}" states="${13:state}"${14: class="oe_highlight"}/>
+                <field name="${20:fieldname}" widget="statusbar" statusbar_visible="$22" statusbar_colors="{'KEY_IS_STATE':'VALUE_IS_COLOR'}"/>
+            </header>
+            <sheet>
+                <group>
+                   <field name="${4:FieldName}"/>
+               </group>
+           </sheet>
+            <footer></footer>
+       </form>
+    </field>
+</record>
+
+<record id="view_${1:Class}_tree" model="ir.ui.view">
+    <field name="name">view.${2:Class}.tree</field>
+    <field name="model">${2:Class}</field>
+    <field name="arch" type="xml">
+        <tree string="${3:String}">
+            <field name="${4:FieldName}"/>
+       </tree>
+    </field>
+</record>
+
+<record id="view_${1:Class}_search" model="ir.ui.view">
+    <field name="name">view.${2:Class}.search</field>
+    <field name="model">${2:Class}</field>
+    <field name="arch" type="xml">
+        <search string="${3:String}">
+            <field name="${4:FieldName}"/>
+       </search>
+    </field>
+</record>
+
+<record id="action_${1:Class}_views" model="ir.actions.act_window">
+    <field name="name">${3:String}</field>
+    <field name="res_model">${2:Class}</field>
+    <field name="view_mode">tree,form</field>
+    <field name="search_view_id" ref="view_${1:Class}_search"/>
+    <field name="context">{${5}}</field>
+    <field name="domain">[${6}]</field>
+    <field name="groups_id" eval="[(7, ref(${5:base.group_user}))]"/>
+    <field name="target">${8:new|inline|current}</field>
+    <field name="multi">${10:True}</field>
+    <field name="key2">${11:client_action_multi}</field>
+    <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+            Click To Add an ${3:String}
+        </p>
+    </field>
+</record>
+
+<record model="ir.actions.act_window.view" id="action_view_${1:model_name}_tree">
+    <field name="act_window_id" ref="action_${1:model_name}" />
+    <field name="view_mode">tree</field>
+    <field name="view_id" ref="view_${1:model_name}_tree" />
+</record>
+
+<record model="ir.actions.act_window.view" id="action_view_${1:model_name}_form">
+    <field name="act_window_id" ref="action_${1:model_name}" />
+    <field name="view_mode">form</field>
+    <field name="view_id" ref="view_${1:model_name}_form" />
+</record>
+
+<menuitem id="${7}" name="${8}" parent="${9}" action="action_${1:Class}_views" sequence=${10} groups="${11}" ${12:web_icon="${13:module},${14:static/description/icon.png}"/>${20}

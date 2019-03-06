@@ -1,0 +1,17 @@
+name=Odoo Domian
+id=odomian
+lex=Python
+text=
+[
+    ${1:'|', }${10:('${11:state}', '${12:=}', ${13:'posted'}),}
+    ${20:('${21:type}', '${22:not in}', ${23:['${24:out_invoice}', '${25:out_refund}']}),}
+    ${30:('${31:asset_category_id.type}', '${32:like}', ${33:'purchase'}),}
+    ${40:('${41:id}', '${42:in}', ${43:active_ids}),}
+    ${50:('${51:product_id.product_tmpl_id.id}', '${52:=}', ${53:active_id}),}
+    ${60:('${61:id}create_date', '${62:&gt;=}', time.strftime('%Y-%m-%d${63: 00:00:00}'))}
+    ${70:('${71:id}date_deadline','${72:&lt;}', time.strftime('%Y-%m-%d$73')),}
+    ${80:('${81:id}', '${82:child_of}', ${83:active_id}),}
+    ${90:('${91:category_id}', '${92:not in}', [ref('${93:base.module_category_hidden}', False), ref('${94:base.module_category_theme_hidden}', False)])}
+    ${100:('${101:maintenance_type}', '${102:in}', context.get('${103:maintenance_type}', ['${104:preventive}', '${105:corrective}']))}
+]
+${}

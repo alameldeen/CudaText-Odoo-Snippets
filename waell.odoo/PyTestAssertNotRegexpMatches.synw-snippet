@@ -1,0 +1,5 @@
+name=Odoo Test AssertNotRegexpMatches
+id=otestassertnotregexpmatches
+lex=Python
+text=
+assertNotRegexpMatches(${1:text}, ${2:regexp}${4:, ${3:msg=None}})

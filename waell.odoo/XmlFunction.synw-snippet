@@ -1,0 +1,5 @@
+name=Odoo Function
+id=ofunction
+lex=XML
+text=
+<function model="${1:model.name}" name="${2:function_name}" eval="(${3:arguments})" />

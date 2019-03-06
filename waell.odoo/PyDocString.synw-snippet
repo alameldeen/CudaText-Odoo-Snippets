@@ -1,0 +1,13 @@
+name=Odoo DocString
+id=odocstring
+lex=Python
+text=
+"""
+    Description_example
+
+    Args:
+        param1 (int): des_example
+
+    Returns:
+        bool: True if successful, False otherwise.
+""

@@ -1,0 +1,5 @@
+name=Odoo Qweb Attribute Esc
+id=oqwebattesc
+lex=XML
+text=
+<t t-esc="${1:value}" />

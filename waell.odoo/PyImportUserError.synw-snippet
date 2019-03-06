@@ -1,0 +1,5 @@
+name=Odoo Import UserError
+id=oimportusererror
+lex=Python
+text=
+from odoo.exceptions import UserError

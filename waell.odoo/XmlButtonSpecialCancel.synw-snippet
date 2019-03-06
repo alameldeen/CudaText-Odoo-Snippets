@@ -1,0 +1,5 @@
+name=Odoo Button Special Cancel
+id=obuttonspecialcancel
+lex=XML
+text=
+<button class="oe_link" special="cancel" string="${1:Cancel}" />

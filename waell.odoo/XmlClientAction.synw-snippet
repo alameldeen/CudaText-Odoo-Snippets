@@ -1,0 +1,11 @@
+name=Odoo Client Action
+id=oclientaction
+lex=XML
+text=
+<record id="${10:${11:model_name}_action${12:_detail}}" model="ir.actions.client">
+    <field name="name">${20:Client Action Title}</field>
+    <field name="res_model">${31:module.}${32:model.name}</field>
+    <field name="tag">${41:${11:model_name}_view${12:_detail}}</field>
+    <field name="context">{50:oocontext}</field>
+</record>
+${90}

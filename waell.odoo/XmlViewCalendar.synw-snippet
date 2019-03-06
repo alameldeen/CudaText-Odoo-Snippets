@@ -1,0 +1,14 @@
+name=Odoo Calendar View
+id=ocalendarv
+lex=XML
+text=
+ <record id="view_${1:Class}_calendar" model="ir.ui.view">
+    <field name="name">view.${2:Class}.calendar</field>
+    <field name="model">${2:Class}</field>
+    <field name="type">calendar</field>
+    <field name="arch" type="xml">
+        <calendar string="${3:String}" date_start="${5:field_date}" color="${6:color_field}" event_open_popup="True" quick_add="True">
+            <field name="${7:field_to_show}" />
+        </calendar>
+    </field>
+ </record>${20}

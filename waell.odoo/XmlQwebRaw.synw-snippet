@@ -1,0 +1,5 @@
+name=Odoo Qweb Raw
+id=oqwebraw
+lex=XML
+text=
+<t t-raw="0" />

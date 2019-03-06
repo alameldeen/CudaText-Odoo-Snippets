@@ -1,0 +1,5 @@
+name=Odoo HTML Field
+id=ofhtml
+lex=Python
+text=
+${1:new_field} = fields.Html(string="${2:String}", )${3}

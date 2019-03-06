@@ -1,0 +1,6 @@
+name=Odoo Mapped
+id=omapped
+lex=Python
+text=
+${1:self}.mapped(${2:key = ${3:function|field.names}})
+${4}

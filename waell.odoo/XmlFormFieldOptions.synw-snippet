@@ -1,0 +1,5 @@
+name=Odoo Form Field Options
+id=oformfieldoption
+lex=XML
+text=
+options="{'no_open': True, 'no_create': True}"

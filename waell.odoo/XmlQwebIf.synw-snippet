@@ -1,0 +1,7 @@
+name=Odoo Qweb If
+id=oqwebif
+lex=XML
+text=
+<t t-if="${1:codition}">
+    ${0}
+</t>

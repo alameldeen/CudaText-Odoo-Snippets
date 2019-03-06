@@ -1,0 +1,5 @@
+name=Odoo Form NewLine
+id=oformnewline
+lex=XML
+text=
+<newline />

@@ -1,0 +1,7 @@
+name=Odoo Template
+id=ot
+lex=XML
+text=
+<template id="${1}" name= ${2}>
+     ${3}
+</template>

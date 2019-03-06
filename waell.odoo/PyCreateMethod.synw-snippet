@@ -1,0 +1,15 @@
+name=Odoo Create Method
+id=ocreatemethod
+lex=Python
+text=
+@api.model
+def create(self, vals):
+    """
+        Create a new record for a model ${1:ModelName}
+        @param values: provides a data for new record
+
+        @return: returns a id of new record
+    """
+    res = super(${1:Class}, self).create(vals)
+    return res
+${20}

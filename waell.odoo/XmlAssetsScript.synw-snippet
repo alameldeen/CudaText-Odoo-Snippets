@@ -1,0 +1,5 @@
+name=Odoo Assets Script
+id=oassetsscript
+lex=XML
+text=
+<script type="text/javascript" src="/${1:module_name}/static/src/js/${2:scripts}.js" />${0}

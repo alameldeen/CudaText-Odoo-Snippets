@@ -1,0 +1,8 @@
+name=Odoo XPATH
+id=oxp
+lex=XML
+text=
+<xpath expr="${1://field[@name='employee_id']}" position="${2:after/before/replace/attributes}">
+    ${3}
+</xpath>
+${20}

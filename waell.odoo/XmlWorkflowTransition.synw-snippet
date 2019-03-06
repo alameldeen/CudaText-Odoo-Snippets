@@ -1,0 +1,11 @@
+name=Odoo Workflow Transition
+id=owft
+lex=XML
+text=
+<record id="${10:id_act1}_${11:id_act2}_transition" model="workflow.transition">
+    <field name="act_from" ref="${10:id_act1}_activity"/>
+    <field name="act_to" ref="${11:id_act2}_activity"/>
+    <field name="signal">signal_${20:goto}_${11:id_act2}</field>
+    <field name="sequence">${31}</field>
+</record>
+${9}

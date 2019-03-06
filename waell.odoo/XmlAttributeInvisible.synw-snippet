@@ -1,0 +1,5 @@
+name=Odoo Attrs Invisible
+id=oattrsinvisible
+lex=XML
+text=
+ attrs="{'invisible':[(${1:field},'=', ${2:condition})]}" ${10}

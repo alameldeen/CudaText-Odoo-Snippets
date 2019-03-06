@@ -1,0 +1,5 @@
+name=Odoo Qweb Field
+id=oqwebfield
+lex=XML
+text=
+<${1:span} t-field="${2:o}.${3:name}" />${0}

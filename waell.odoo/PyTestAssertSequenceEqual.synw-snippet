@@ -1,0 +1,5 @@
+name=Odoo Test AssertRaisesSequenceEqual
+id=otestassertraissequenceequal
+lex=Python
+text=
+assertSequenceEqual(${1:seq1}, ${2:seq2}${4:, ${3:msg=None}}${6:, ${5:seq_type=None}})

@@ -1,0 +1,5 @@
+name=Odoo Debug Warning
+id=odebugwarning
+lex=Python
+text=
+_logger.warning("${1:Message}")

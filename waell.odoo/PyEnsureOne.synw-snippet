@@ -1,0 +1,6 @@
+name=Odoo Ensure One
+id=oensureone
+lex=Python
+text=
+${1:self}.ensure_one()
+${2}

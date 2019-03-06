@@ -1,0 +1,6 @@
+name=Odoo Security CSV Record
+id=ocsvrecord
+lex=Csv
+text=
+access_${1:model_name}_${2:role},${3:model.name} ${2:[role]},model_${1:model_name},${3:base.group_user},${4:read_search},${5:update},${6:create},${7:delete}
+${20}

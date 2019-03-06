@@ -1,0 +1,5 @@
+name=Odoo Many2Many Field
+id=ofm2m
+lex=Python
+text=
+${1:new_field}_ids = fields.Many2many(comodel_name="${2:comodel_name}", relation="${3:Relation}_rel", column1="${4:Column1}_id", column2="${5:Column2}_id", string="${6:String}", domain="[]", context="{}")${10}

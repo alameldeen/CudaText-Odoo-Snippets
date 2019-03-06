@@ -1,0 +1,7 @@
+name=Odoo Qweb Minimal Layout
+id=oqwebminimallayout
+lex=XML
+text=
+<t t-call="report.minimal_layout">
+    ${0}
+</t>

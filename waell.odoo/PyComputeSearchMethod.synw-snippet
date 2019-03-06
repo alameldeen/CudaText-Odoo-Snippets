@@ -1,0 +1,12 @@
+name=Odoo Compute Search Method
+id=ocomputesearchmethod
+lex=Python
+text=
+@api.multi
+@api.depends("${1:Field}")
+def _search_${1:Field}(self, operator, value):
+    for rec in self:
+        if operator == 'like':
+            operator = 'ilike'
+        return [("${2:new_field}", operator, value)]}
+        ${4}

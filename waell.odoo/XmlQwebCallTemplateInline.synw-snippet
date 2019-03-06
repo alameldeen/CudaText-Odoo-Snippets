@@ -1,0 +1,5 @@
+name=Odoo Qweb Call Template Inline
+id=oqwebcalltemplateinline
+lex=XML
+text=
+<t t-call="${1:template}" />${0}

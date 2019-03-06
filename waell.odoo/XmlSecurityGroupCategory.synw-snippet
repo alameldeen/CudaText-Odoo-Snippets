@@ -1,0 +1,12 @@
+name=Odoo Security Group Category
+id=osgc
+lex=XML
+text=
+<record id="${1}" model="ir.module.category">
+    <field name="name">${2}</field>
+    <field name="description">${3:Description here.}</field>
+    <field name="visible" eval="${41:True}"/>
+    <field name="sequence">${5:10}</field>
+    <field name="parent_id" ref="${5:ir.module.category}" />
+</record>
+${20}

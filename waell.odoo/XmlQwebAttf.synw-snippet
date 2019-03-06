@@ -1,0 +1,5 @@
+name=Odoo Qweb AttributeF
+id=oqwebattf
+lex=XML
+text=
+t-attf-${1:name}="${2:format_string}"

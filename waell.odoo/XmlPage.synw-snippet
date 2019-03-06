@@ -1,0 +1,10 @@
+name=Odoo Page
+id=opage
+lex=XML
+text=
+<page string="${1}" class="${2:oe_page_${1/(([a-zA-Z])|([^A-Za-z]))/(?2:\l$2)(?3:\_)/g}}" accesskey="${3:${1/(^.)(.*)/\U\1/g}}">
+    <group name="${2}" sring="${3}">
+        <field name="${4}"/>
+    </group>
+</page>
+${20}

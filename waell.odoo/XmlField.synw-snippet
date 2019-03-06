@@ -1,0 +1,5 @@
+name=Odoo XML Field
+id=oxmlf
+lex=Xml
+text=
+<field name="${1:FieldName}"/>

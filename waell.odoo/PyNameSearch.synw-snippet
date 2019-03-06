@@ -1,0 +1,10 @@
+name=Odoo Name Search
+id=onamesearch
+lex=Python
+text=
+self.name_search(name="${1:Name}", args="${2:None}", operator="${3:ilike}", limit=${4:100})${10}
+${1:self}.name_search("${10:Name pattern to match}",
+    ${20:args = "${21:None}",}
+    ${30:operator = "${31:ilike}",}
+    ${40:limit = ${41:100}},
+)${90}

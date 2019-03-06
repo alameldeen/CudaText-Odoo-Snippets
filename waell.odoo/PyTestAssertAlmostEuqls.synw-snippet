@@ -1,0 +1,5 @@
+name=Odoo Test AssertAlmostEqual
+id=otestassertalmostequal
+lex=Python
+text=
+assertAlmostEqual(${1:first}, ${2:second}${4:, ${3:places=7}}${6:, ${5:msg=None}}${8:, ${7:delta=None}})

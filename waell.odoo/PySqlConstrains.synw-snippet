@@ -1,0 +1,7 @@
+name=Odoo Sql Constrains
+id=osqlconstrains
+lex=Python
+text=
+_sql_constraints = [
+    ("${1:code}", "${2:SqlMethod}", "${3:Message}"),
+]${4}

@@ -1,0 +1,5 @@
+name=Odoo Qweb If InLine
+id=oqwebifinline
+lex=XML
+text=
+<${1:tag} t-if="${2:condition}">${3:value}</${1}>${0}

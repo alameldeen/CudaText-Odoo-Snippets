@@ -1,0 +1,6 @@
+name=Odoo Debug PDB
+id=odebugpdb
+lex=Python
+text=
+import pudb
+pudb.set_trace()

@@ -1,0 +1,5 @@
+name=Odoo Qweb Set InLine
+id=oqwebsetinline
+lex=XML
+text=
+<t t-set="${1:name}" t-value="${2:value}" />${0}

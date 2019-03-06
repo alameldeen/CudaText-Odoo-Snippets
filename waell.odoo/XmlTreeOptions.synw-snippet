@@ -1,0 +1,5 @@
+name=Odoo Tree Options
+id=otreeoptions
+lex=XML
+text=
+create="1" delete="1" edit="1" editable="${5:top/bottom}"

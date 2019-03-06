@@ -1,0 +1,5 @@
+name=Odoo Test AssertRaises
+id=otestassertraises
+lex=Python
+text=
+assertRaises(${1:exception})

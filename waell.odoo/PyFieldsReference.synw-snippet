@@ -1,0 +1,5 @@
+name=Odoo Reference Field
+id=ofreference
+lex=Python
+text=
+${1:name} = fields.Reference(string="${2:String}", selection=[("${3:model_name1}", "${4:string1}"), ("${5:model_name1}", "${6:string1}"),])${20}

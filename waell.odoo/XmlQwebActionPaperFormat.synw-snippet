@@ -1,0 +1,15 @@
+name=Odoo Qweb Action PaperFormat
+id=oqwebactionpaperformat
+lex=XML
+text=
+<report
+    id="action_report_${1:model_name}"
+    model="${1/_/./g}"
+    report_type="qweb-pdf"
+    string="${2:Report name}"
+    name="${3:module_name}.report_${1:model_name}"
+    file="${3:module_name}.report_${1:model_name}" />
+
+<record model="ir.actions.report.xml" id="action_report_${1:model_name}">
+    <field name="paperformat_id" ref="${4:paperformat_id}" />
+</record>

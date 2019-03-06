@@ -1,0 +1,38 @@
+name=Odoo Server Action
+id=oserveraction
+lex=XML
+text=
+<record id="${10:${11:Class}_action${12:_detail}}" model="ir.actions.server">
+    <field name="name">${13:Server Action Title}</field>
+    <field name="model_id" ref="${14:${15:module.}model_${11:model_name}}"/>
+    <field name="context">{$21:oogencontext}</field>
+    <field name="action_id" ref="${6:ir.actions.actions}" />
+    ${7:<field name="condition" eval="${3:True}" />}
+    ${8:<field name="child_ids" eval="[(6, ref('${6:ir.actions.server}'))]" />}
+    ${30:<field name="code">
+    ${31:if object.some_condition():
+        action = {
+            "type": "ir.actions.act_window",
+            "view_mode": "form",
+            "res_model": object._name,
+            "res_id": object.id,
+        \\}
+        else:
+            raise Warning(object.name)
+
+       # Evaluation context:
+        self: the model object linked to the action via `model_id`
+        object, obj: only available if `active_model` and `active_id` are provided (via context) otherwise `None`. The actual record selected by `active_id`
+        pool: the current database registry
+        datetime, dateutil, time: corresponding Python modules
+        cr: the current cursor
+        user: the current user record
+        context: execution context
+        Warning: constructor for the `Warning` exception}
+
+        ## hr_expense addon example:
+        if context.get('active_model') == 'hr.expense' and context.get('active_ids'):
+            action = env['hr.expense'].browse(context['active_ids']).submit_expenses()
+    </field>}
+</record>
+${90}

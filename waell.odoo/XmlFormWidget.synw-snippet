@@ -1,0 +1,5 @@
+name=Odoo Form Widget
+id=oformwidget
+lex=XML
+text=
+widget="${21:statusbar/progressbar/many2onebutton/handle}" ${}

@@ -1,0 +1,5 @@
+name=Odoo View Button
+id=ovbutton
+lex=XML
+text=
+<button string="${1:Example}" name="${2:python_function}" type="object" context="{}" />

@@ -1,0 +1,5 @@
+name=Odoo Environment
+id=oenv
+lex=Python
+text=
+${1}_obj = self.env["${2}"]

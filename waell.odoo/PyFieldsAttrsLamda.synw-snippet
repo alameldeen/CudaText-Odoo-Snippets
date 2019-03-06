@@ -1,0 +1,5 @@
+name=Odoo Field Attribute Lambda
+id=ofattrslambda
+lex=Python
+text=
+lambda self: self.${1:Method}()${0}

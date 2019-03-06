@@ -1,0 +1,5 @@
+name=Odoo Date Field
+id=ofdate
+lex=Python
+text=
+${1:new_field} = fields.Date(string="${2:String}", default=fields.Date.today)${3}

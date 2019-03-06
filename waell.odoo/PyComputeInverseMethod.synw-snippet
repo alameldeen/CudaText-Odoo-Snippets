@@ -1,0 +1,10 @@
+name=Odoo Compute Inverse Method
+id=ocomputeinversemethod
+lex=Python
+text=
+@api.multi
+@api.depends("${1:Field}")
+def _inverse_${1:Field}(self):
+    for rec in self:
+        if rec.${1:Field}:
+            ${4}

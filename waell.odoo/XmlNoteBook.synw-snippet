@@ -1,0 +1,12 @@
+name=Odoo NoteBook
+id=onotebook
+lex=XML
+text=
+<notebook>
+    <page string="${1}" name="${2}">
+        <group name="${3}" sring="${4}">
+            <field name="${5:FieldName}"/>
+        </group>
+    </page>
+</notebook>
+${20}

@@ -1,0 +1,5 @@
+name=Odoo Form ColSpan
+id=oformcolspan
+lex=XML
+text=
+colspan="${1:colspan}" ${2}

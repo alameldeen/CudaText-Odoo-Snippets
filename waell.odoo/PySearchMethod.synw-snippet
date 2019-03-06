@@ -1,0 +1,10 @@
+name=Odoo Search Method
+id=osearchmethod
+lex=Python
+text=
+def search(self, args, offset=0, limit=None, order=None, count=False):
+    ${1}
+    res = super(${2:Class}, self).search(args, offset=offset, limit=limit, order=order, count=count)
+    ${3}
+    return res
+${20}

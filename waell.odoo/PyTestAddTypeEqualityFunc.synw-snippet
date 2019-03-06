@@ -1,0 +1,5 @@
+name=Odoo Test AddTypeEqualityFunc
+id=otestaddtypeequalityfunc
+lex=Python
+text=
+addTypeEqualityFunc(${1:typeobj}, ${2:function})

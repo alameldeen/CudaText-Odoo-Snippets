@@ -1,0 +1,8 @@
+name=Odoo Record
+id=orecord
+lex=XML
+text=
+<record id="${1:RecordID}" model="${2:Class}">
+    <field name="${3:FieldsName}">${4:Data}</field>
+</record>
+${90}

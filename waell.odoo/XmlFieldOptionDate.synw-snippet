@@ -1,0 +1,5 @@
+name=Odoo Field Option Date
+id=ofieldoptiondate
+lex=XML
+text=
+t-field-options="{&quot;format&quot;: &quot;dd/MM/yyyy&quot;}"

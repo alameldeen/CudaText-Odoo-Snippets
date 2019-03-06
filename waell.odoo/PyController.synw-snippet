@@ -1,0 +1,51 @@
+name=Odoo Controller
+id=oconroller
+lex=Python
+text=
+# -*- coding: utf-8 -*-
+##############################################################################
+#
+#    Odoo, Open Source Management Solution
+#    Copyright (c) ${01:2019} ${02:Waell Ahmed} (${03:http://www.genericdev.com}) info <${04:waell.alameldeen@gmail.com}>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+
+from odoo.http import route, request, Controller
+from odoo import _
+from odoo.addons.website.models.website import slug
+from odoo.http import request
+from logging import getLogger
+_logger = getLogger(__name__)
+${1}
+
+########## ########## ########## ########## ##########
+# ${2:Description}
+########## ########## ########## ########## ##########
+class ${3:Class}(http.Controller):
+    @http.route('/jobs/add', type='http', auth="user", website=True)
+    def jobs_add(self, **kwargs):
+        # avoid branding of website_description by setting rendering_bundle in context
+        job = request.env['hr.job'].with_context(rendering_bundle=True).create({
+            'name': _('Job Title'),
+        })
+        return request.redirect("/jobs/detail/%s?enable_editor=1" % slug(job))
+
+    @http.route('/jobs/detail/<model("hr.job"):job>', type='http', auth="public", website=True)
+    def jobs_detail(self, job, **kwargs):
+        return request.render("website_hr_recruitment.detail", {
+            'job': job,
+            'main_object': job,
+        })

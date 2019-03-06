@@ -1,0 +1,19 @@
+name=Odoo FieldViewGet Method
+id=ofieldviewgetmethod
+lex=Python
+text=
+@api.model
+def fields_view_get(self, view_id=None, view_type='form', toolbar=False, submenu=False):
+    from lxml import etree
+    import json
+    result = super(${1:Class}, self).fields_view_get(view_id, view_type, toolbar=toolbar, submenu=submenu)
+    if view_type == 'form':
+        doc = etree.XML(result['arch'])
+        for node in doc.xpath("//field[@name='field_name']"):
+	    # Add attrs
+            modifiers = json.loads(node.get("modifiers", '{}'))
+            modifiers.update({'invisible': [('field', 'operator', 'value')]})
+            node.set("modifiers", json.dumps(modifiers))
+            result['arch'] = etree.tostring(doc)
+    return result
+${20}

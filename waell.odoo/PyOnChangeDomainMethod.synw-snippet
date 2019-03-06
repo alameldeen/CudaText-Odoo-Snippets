@@ -1,0 +1,11 @@
+name=Odoo OnChange Domain Method
+id=oonchangedomainmethod
+lex=Python
+text=
+@api.onchange('${1:field_name}')
+def _onchange_${1}(self):
+    return {
+        'domain': {
+            '${2:field_name}': ${6:[('${3:field_name}', '${4:=}', ${5:self.${1}})]}
+        }
+    }${0}

@@ -1,0 +1,5 @@
+name=Odoo Super
+id=osuper
+lex=Python
+text=
+super(${1:Class}, self).${2:Method}(${3})${20}

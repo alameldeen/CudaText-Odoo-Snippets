@@ -1,0 +1,5 @@
+name=Odoo Test AssertLess
+id=otestassertless
+lex=Python
+text=
+assertLess(${1:first}, ${2:second}${3:, ${4:msg=None}})
